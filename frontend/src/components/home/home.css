@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.border {
+  height: 90vh;
+  width: 97vw;
+  margin-top: 50px;
+  margin-left: 20px;
+  overflow-x: hidden;
+  border: 1px solid black;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  margin-left: 6vw;
+  margin-bottom: 1vw;
+}
+
+.greet {
+  padding-top: 20px;
+  display: flex;
+  margin-left: 8vw;
+  font-size:20px;
+  font-weight:600;
+}
+
+
+.diary1 {
+  margin: 0;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.logout {
+  color: rgb(218, 33, 156);
+  text-decoration: none;
+  margin-left: 70vw;
+  cursor: pointer;
+  justify-content: space-evenly;
+}
+
+.standing-line {
+  border: 1.2px solid black;
+  width: 97vw;
+}
+
+.table {
+  background-color: #fafafa;
+  width: 80vw;
+  margin: 100px;
+  overflow: auto;
+}
+
+td {
+  border: 3px solid #fafafa;
+  padding: 15px;
+}
+
+.thead {
+  background-color: #3d4ee7;
+  color: #e7e7e7;
+}
+
+.cell, .linkcell {
+  border: 1px solid rgb(245, 245, 245);
+  padding: 15px;
+  font-size: 25px;
+  background-color: lightblue;
+}
+
+.action-link, .linkcell a {
+  color: rgb(218, 33, 156);
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.delete {
+  font-size: 25px;
+  overflow: hidden;
+  color: rgb(218, 33, 156);
+  background-color: lightblue;
+  border: none;
+  cursor: pointer;
+}
+
+.line {
+  padding: 10px;
+  background-color: #3d4ee7;
+  display: flex;
+  cursor: pointer;
+  font-size:20px;
+}
+
+.linep {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2vw;
+  padding-right: 10vw;
+  padding-top: 3vw;
+  color: rgb(218, 33, 156);
+  font-size: 25px;
+}
+
+/* Media Query for max-width: 457px */
+/* Media Query for max-width: 457px */
+@media (min-width: 360px) and (max-width:457px) {
+  .border {
+    height: 130vh;
+    width: 129vw;
+    border: 2px solid black;
+    margin-left: 4vw;
+  }
+  .icon1{
+    height:13vw;
+    width:15vw;
+    object-fit: contain;
+  }
+
+  .standing-line {
+    margin-top: 19vw;
+    width: 130vw;
+  }
+
+  .diary1 {
+    font-size: 35px;
+  }
+
+  .heading {
+    position: absolute;
+    top: 15vw;
+    left: 0;
+  }
+  .greet{
+    font-size:26px;
+
+  }
+
+  .table {
+    width: 97%;  /* Adjust the width as per your requirement */
+    margin-left: 2vw;  /* Adjust the margin as per your requirement */
+  }
+  .cell, .linkcell {
+    font-size: 20px;
+    
+  }
+  .linkcell{
+    color: rgb(218, 33, 156);
+  }
+  .delete{
+    font-size: 20px;
+  }
+}
+
+/* Media Query for width: 458px to 700px */
+@media (min-width: 458px) and (max-width: 700px) {
+  .border {
+    height: 91vh;
+    width: 95vw;
+    margin-left: 3vw;
+  }
+
+  .standing-line {
+    margin-top: 3vw;
+    width: 120vw;
+  }
+
+  .diary1 {
+    font-size: 32px;
+  }
+
+  .logout {
+    margin-left: 55vw;
+  }
+  
+  .heading {
+    position: relative;
+    top: 4vw;
+    left: 4vw;
+  }
+  .greet{
+    font-size:20px;
+    font-weight:600
+  }
+  .linep{
+    font-size: 25px;
+  }
+
+  .table {
+    width: 80%;  /* Adjust the width as per your requirement */
+    margin-left: 2vw;
+  
+  }
+ .cell,.linkcell,.delete{
+  font-size:23px;
+ }
+ .icon1{
+  height:10vw;
+  width:10vw;
+  object-fit: contain;
+ }
+ .line{
+  font-size:20px
+ }
+}
+
+/* Media Query for width: 701px to 1400px */
+@media (min-width: 701px) and (max-width: 933px) {
+  .border {
+    height: 85vh;
+    width: 90vw; 
+    margin-left: 5vw;
+  }
+   .greet{
+    font-size:20px;
+    font-weight:600
+   }
+   .linep{
+    font-size: 25px;
+  }
+  .line{
+    font-size:20px
+   }
+
+  .standing-line {
+   
+    width: 110vw;
+  }
+.icon1{
+  height:7vw;
+  width:10vw;
+  object-fit: contain;
+}
+
+  .diary1 {
+    font-size: 38px;
+  }
+
+  .heading {
+    
+    position: relative;
+  left: 10vw;
+  top: -1vw;
+
+  }
+
+  .logout {
+    margin-left: 55vw;
+  }
+
+  .table {
+    width: 70vw;
+    margin: 30px;
+  }
+}
+@media (min-width: 934px) and (max-width: 1400px) {
+  .border {
+    height: 85vh;
+    width: 90vw; 
+    margin-left: 5vw;
+  }
+   .greet{
+    font-size:20px;
+    font-weight:600
+   }
+   .linep{
+    font-size: 25px;
+  }
+  .line{
+    font-size:20px
+   }
+
+  .standing-line {
+   
+    width: 110vw;
+  }
+.icon1{
+  height:7vw;
+  width:10vw;
+  object-fit: contain;
+}
+
+  .diary1 {
+    font-size: 38px;
+  }
+
+  .heading {
+  position: relative;
+  left: 11vw;
+  top:5vw;
+
+  }
+
+  .logout {
+    margin-left: 55vw;
+  }
+
+  .table {
+    width: 70vw;
+    margin: 30px;
+  }
+}

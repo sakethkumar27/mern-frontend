@@ -1,0 +1,306 @@
+
+.thin-line{
+    height:90vh;
+    width:97vw;
+    margin-top:30px;
+    margin-left:20px;
+    box-sizing: border-box;
+    border:2px solid black;
+}
+.vertical-lines{
+    border:1px solid black;
+    margin-top:20px;
+}
+.book{
+  height:500px;
+  width:400px;
+  object-fit: contain;
+  margin-right: 20vw;
+  margin-top:-2vw
+}
+
+
+.register-button{
+    font-size:30px;
+    margin-top:40px;
+    margin-left:10px;
+    height:60px;
+    width:200px;
+    background-color:rgb(0, 128, 255);
+    color:white;
+    font-family:Arial;
+}
+.username{
+    color:black;
+    padding-left:40px;
+    font-size:35px;
+}
+.search{
+    margin-left:40px;
+    height:45px;
+    width:240px;
+    color:black;
+    border:2px solid rgb(178, 105, 242); 
+    background-color:lightblue ;
+    font-size:35px;
+}
+.password{
+    padding-left:45px;
+    font-size: 35px;
+    color:black;
+}
+.password-input{
+ height:44px;
+ width:240px;
+ margin-left:45px;
+ margin-top:5px;
+ border:2px solid rgb(178, 105, 242);
+ background-color: lightblue;
+ font-size:35px;
+}
+.registration-form p{   
+    font-size:50px;
+    color:rgb(147, 52, 202);
+    padding-left:50px;
+}
+.link{
+    margin-top:40px;
+    }
+.link a {
+        text-decoration: none;
+    }
+ .signup-block{
+   position:absolute;
+   top:25%;
+   left:65%;
+    }
+.registration-form img{
+        position:absolute;
+        top:50%;
+        right:50%;
+        transform:translate(-130%,-40%)
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+     /* Align items vertically center */
+  }
+  
+  .icon1 {
+    margin-right: 10px; /* Add some margin between the image and the paragraph */
+  }
+  
+  .app-title {
+    margin: 0;
+    font-size:40px;
+    display:inline-block /* Remove default margin to ensure the title aligns with the image */
+  }
+  
+@media (max-width: 401px)  {
+    /* Your CSS styles here */
+   
+    .icon-container{
+      
+    margin-left:20%;
+
+    }
+    .app-title{
+        font-size:40px;
+        display:inline-block
+    }
+    .username,.password{
+        font-size:35px;
+    }
+    .registration-form {
+        margin-left:15vw
+    }
+    .registration-form p{
+       
+        margin-right:7vw
+    }
+  }
+@media (max-width: 460px) {
+    .thin-line{
+    height:113vh;
+    width: 120vw;
+    }
+ 
+    .vertical-lines{
+      border:1px solid black;
+      margin-top:120px
+    }
+    .icon-container{
+          font-size:45px;
+      padding-right:15%;
+        position:relative;
+        display:flex;
+
+    }
+ 
+    .registration-form p{
+        padding-left:2px;
+        font-size:45px
+    }
+    .app-title{
+        padding-left:10px;   
+    }
+  
+    .registration-form {
+     position: absolute;
+     left: 50%;
+     top:30%;
+    transform:translate(-60%,15%)    
+    }
+  .username,.password{
+  padding-right: 100px;
+  justify-content: center;
+  }
+  .password-input,.search{
+    padding-right:80px
+  }
+  .register-button{
+    padding-right:20px
+  }
+  .submit{
+    padding-right:20px
+  }
+  .link{
+    font-size:25px
+  }
+  .book{
+    display: none;
+  }
+  }
+
+  @media screen and (min-width: 460px) and (max-width: 768px) {
+    /* Your CSS styles for medium screens (e.g., larger smartphones and small tablets) */
+    .thin-line{
+        height:145vh;
+        width: 150vw;
+        }
+        .vertical-lines{
+          border:1px solid black;
+        }
+        .icon-container{
+              font-size:45px;
+              margin-left:10vw
+        }
+     
+        .registration-form p{
+           
+            font-size:45px
+        }
+        .book{
+          display: none;
+        }
+        .app-title{
+            padding-left:10px;   
+        }    
+        .registration-form {
+         position: absolute;
+        transform:translate(-50%,50%)    
+        }
+      .username,.password{
+      padding-right: 100px;
+      justify-content: center;
+      }
+      .password-input,.search{
+        padding-right:80px
+      }
+      .register-button{
+        padding-right:20px
+      }
+      .submit{
+        padding-right:20px
+      }
+      .link{
+        font-size:25px
+      }
+
+  }
+
+  
+ 
+  @media screen and (min-width: 767px) and (max-width: 1300px) {
+    .book {
+      height: 30vw;
+      width: 30vw;
+      object-fit: contain;
+      margin-right:-10vw
+    }
+    .registration-form {
+      transform: translate(-5%);
+    }
+    .register-button {
+      margin-left: 7vw;
+    }
+    .link {
+      margin-left: 6vw;
+    }
+    .registration-form p {
+      font-size: 25px; /* Adjust font size for the registration form heading */
+   
+      font-weight: 500; /* Set font weight for the registration form heading */
+    }
+    .username,
+    .password {
+      font-size: 20px; /* Set font size for the headings "Username" and "Password" */
+     /* Set margin bottom for headings */
+      font-weight: 500; /* Set font weight for the headings */
+    }
+    .search,
+    .password-input {
+      font-size: 18px; /* Set font size for username and password fields */
+     /* Set padding for input fields */
+      /* Set margin bottom for input fields */
+      width:70%; /* Set width for input fields */
+      box-sizing: border-box; /* Include padding and border in the total width */
+    }
+    .link a {
+      font-size: 16px; /* Adjust font size for the link text */
+      padding: 3px; /* Add padding to ensure the link stays within the box */
+    }
+  }
+  @media screen and (min-width: 1301px) and (max-width:1500px) {
+    .book {
+      height: 26vw; /* Adjust size for larger screens */
+      width: 25vw;
+      margin-right:2vw;
+      margin-top:-2vw; /* Adjust size for larger screens */
+      object-fit: contain;
+    }
+    .registration-form {
+      transform: translate(-10%); /* Adjust position for larger screens */
+    }
+    .register-button {
+      margin-left: 10vw; /* Adjust margin for larger screens */
+    }
+    .link {
+      margin-left: 8vw; /* Adjust margin for larger screens */
+    }
+    .registration-form p {
+      font-size: 28px; /* Adjust font size for larger screens */
+     
+      font-weight: 600; /* Adjust font weight for larger screens */
+    }
+    .username,
+    .password {
+      font-size: 24px; /* Adjust font size for larger screens */
+     
+      font-weight: 600; /* Adjust font weight for larger screens */
+    }
+    .search,
+    .password-input {
+      font-size: 20px; /* Adjust font size for larger screens */
+      padding: 12px; /* Adjust padding for input fields on larger screens */
+    
+     
+      box-sizing: border-box;
+    }
+    
+    .link a {
+      font-size: 18px; /* Adjust font size for larger screens */
+      padding: 4px; /* Adjust padding for link text on larger screens */
+    }
+  }
