@@ -24,7 +24,7 @@ const id=useParams()
     try {
       const token = localStorage.getItem('token');
       const uuid1 = localStorage.getItem('uuid1')// Get the JWT token from localStorage
-      const response = await axios.post('http://localhost:8000/api/getuser', { uuid1 }, { headers: { 'x-token': token } }); // Make POST request to server with UUID in the request body and token in headers
+      const response = await axios.post('https://mydiaryback.onrender.com/api/getuser', { uuid1 }, { headers: { 'x-token': token } }); // Make POST request to server with UUID in the request body and token in headers
       setEntries(response.data); // Update entries state with received data
     } catch (error) {
       console.error('Error fetching entries:', error);
@@ -43,7 +43,7 @@ const id=useParams()
     const confirmDelete = window.confirm('Are you sure you want to delete this entry?');
     if (confirmDelete) {
         try {
-            await axios.delete(`http://localhost:8000/deleteentry/${id}`)
+            await axios.delete(`https://mydiaryback.onrender.com/deleteentry/${id}`)
             
             // Update state with the entries array excluding the deleted entry
             .then(res=>{console.log(res)

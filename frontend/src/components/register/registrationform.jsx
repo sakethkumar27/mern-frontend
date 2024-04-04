@@ -18,7 +18,7 @@ const RegistrationForm = () => {
 
     e.preventDefault();
     axios
-      .post('http://localhost:8000/register', { username, password })
+      .post('https://mydiaryback.onrender.com/register', { username, password })
       .then(() => {
         alert('Registration Successful')
         navigate('/login')

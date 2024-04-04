@@ -18,7 +18,7 @@ export const Entry = () => {
     try {
      // Get the JWT token from localStorage
        const res = await axios.post(
-        'http://localhost:8000/addentry',
+        'https://mydiaryback.onrender.com/addentry',
         { date, description },
         { headers: { 'x-token': token } } // Include the token in the request headers with 'x-token' header
       );

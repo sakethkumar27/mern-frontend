@@ -14,7 +14,7 @@ const Viewentry = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/viewentry/${id}`);
+        const response = await axios.get(`https://mydiaryback.onrender.com/viewentry/${id}`);
         setEntry(response.data);
       } catch (error) {
         console.error('Error fetching entry:', error);

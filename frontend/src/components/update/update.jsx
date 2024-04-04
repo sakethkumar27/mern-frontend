@@ -15,7 +15,7 @@ const Update = () => {
     try {
       const token = localStorage.getItem('token');
 
-      await axios.put(`http://localhost:8000/update/${id}`, { date, description }, {
+      await axios.put(`https://mydiaryback.onrender.com/update/${id}`, { date, description }, {
         headers: {
           'x-token': token,
         }
