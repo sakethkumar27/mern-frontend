@@ -87,7 +87,7 @@
   margin-right: 20vw;
 }
 
-@media (min-width: 400px) and (max-width: 700px) {
+@media (min-width: 300px) and (max-width: 700px) {
   .view-border {
     border: 2px solid black;
     height: 120vh;

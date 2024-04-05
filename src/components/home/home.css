@@ -114,7 +114,7 @@ td {
 
 /* Media Query for max-width: 457px */
 /* Media Query for max-width: 457px */
-@media (min-width: 360px) and (max-width:457px) {
+@media (min-width: 300px) and (max-width:457px) {
   .border {
     height: 130vh;
     width: 129vw;
